@@ -1,0 +1,16 @@
+version: '2'
+services:
+  ansible:
+    container_name: focused_jepsen
+    hostname: 255c2afd976d
+    image: mm185731/ansible294
+    volumes:
+      - ../../../:/devops
+    working_dir: /devops/ansible
+    dns:
+
+    - 8.8.8.8
+    - 4.4.4.4
+
+
+
