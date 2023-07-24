@@ -5,12 +5,15 @@ services:
     hostname: 255c2afd976d
     image: mm185731/ansible294
     volumes:
-      - ../../../:/devops
+      - .:/devops
     working_dir: /devops/ansible
     dns:
 
     - 8.8.8.8
     - 4.4.4.4
+
+
+
 
 
 
